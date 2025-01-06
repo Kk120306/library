@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="assets/logo.png" alt="logo" class="logo">
+            <button class="log">Log Book</button>
+        </div>
+
+        
+        <div class="add-pop hidden">
+            <div class="pop-title">Enter Here:</div>
+            <form>
+                <label for="name">Book Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="author">Author name:</label><br>
+                <input type="text" id="author" name="author"><br>
+                <label for="date">Publish date:</label><br>
+                <input type="date" id="date" name="date"><br>
+                <fieldset>
+                    <legend>Have you read the book?</legend>
+                    <div>
+                        <input type="radio" id="yes" name="yesno" value="true" checked/>
+                        <label for="yes">Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="no" name="yesno" value="false"/>
+                        <label for="no">No</label>
+                    </div>
+                </fieldset>
+                <button class="add">Add Book</button>
+            </form>
+            
+            <div class="pop-buttons">
+                <button class="clear">Clear</button>
+                <button class="exit">Exit</button>
+            </div>
+        </div>
+
+
+        <div class="display">
+            
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
